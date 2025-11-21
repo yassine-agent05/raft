@@ -1,0 +1,44 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raft Consensus Algorithm</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Raft Consensus Algorithm</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction to Raft</h2>
+            <p>The Raft consensus algorithm is designed to be easy to understand while providing a practical solution for managing a replicated log. It was introduced by Diego Ongaro and John Ousterhout in 2014.</p>
+        </section>
+        <section>
+            <h2>Key Concepts</h2>
+            <ul>
+                <li><strong>Leader Election:</strong> Raft uses a leader-based approach where one node is elected as the leader to manage log replication.</li>
+                <li><strong>Log Replication:</strong> The leader receives client requests and appends them to its log, then replicates these entries to follower nodes.</li>
+                <li><strong>Safety:</strong> Raft ensures that committed entries are durable and consistent across all nodes.</li>
+                <li><strong>Membership Changes:</strong> Raft supports dynamic membership changes, allowing nodes to join or leave the cluster safely.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Further Reading</h2>
+            <p>For more detailed information about the Raft consensus algorithm, refer to the original paper: <a href="https://raft.github.io/raft.pdf" target="_blank">In Search of an Understandable Consensus Algorithm (Extended Version)</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Raft Consensus Algorithm. All rights reserved.</p>
+    </footer>
+    <script>
+        // Example JavaScript to enhance user experience
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Raft Consensus Algorithm page loaded.');
+        });
+    </script>
+</body>
